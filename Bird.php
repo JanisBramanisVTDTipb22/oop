@@ -16,5 +16,6 @@ class Bird {
     public function fly() {
         echo "Fly away" . $this->name;
     }
+    
 }
 
