@@ -1,18 +1,11 @@
 <?php
 
-include "Vehicle.php";
+include_once "Vehicle.php";
 
-class Car extends vehicle
-{
+class Car extends Vehicle {
+    static $describe = "aa <br>";
 
-    static $describe = "Man ir riepas un dzinejs";
-
-    public function __construct($brand = "", $mileage = 0) {
-        $this->brand = $brand;
-        $this->mileage = $mileage;
-    }
-
-    static function makeNoise() {
-        echo "MEEP, MEEP" . "<br>";
-    }
+   static function makeNoise() {
+       echo "Beep, Beep! <br>";
+   }
 }

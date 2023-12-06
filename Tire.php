@@ -1,14 +1,18 @@
 <?php
 
 class Tire {
-   
-    public function __construct( 
-        public $size,
-        public $type,
-        private $quality,
-    ){}
 
-    public function __destruct() {
-        echo "<br>" . " BOOOM! ";
+    public function __construct(
+        $size,
+        $type,
+        $quality) {
+            $this->size=$size;
+            $this->type=$type;
+            $this->qualit=$quality;
+       }
+    
+       public function __destruct() {
+        echo "tire dead <br>";
     }
+    
 }

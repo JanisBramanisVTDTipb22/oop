@@ -1,38 +1,36 @@
 <?php
 
-include "Tire.php";
 include "Car.php";
+include "Tire.php";
 include "Train.php";
+include "Cat.php";
+include "Dog.php";
+include "Math.php";
 
-$myCar = new Car("Gaz", 0.01);
-//$myTrain  = new Train("", );
+$cat1 = new Cat("Mincis", 2);
+$cat2 = new Cat("Brincis", 3);
+$dog1 = new Dog("Reksis", 6);
+Dog::payAttention();
+echo Math::addTwo(4, 9) . "<br/>";
+echo Math::factorial(10) . "<br/>";
+$masivsArfunkcijām = [3,5,6];
+    
 /*
-$myVehicle = new Vehicle();
-$Bird1 = new Bird("skoda", 14);
-echo $Bird1->name . "<br>";
+$car1 = new Car("Audi", 12);
+$train1 = new Train("Skoda", 1435, 540986740987609867509);
+$car2 = new Car("Feraro", 2);
+$car1->increaseMileage(240);
 
-$Bird2 = new Bird("gaz", 12);
-echo $Bird2->name . "<br>";
-
-$Bird3 = new Bird("kaija", 16);
-echo $Bird3->name . "<br>";
-
-$Car1 = new Car("golf", 147543);
-//echo $Car1->name . "<br>";
-
-$Car2 = new Car("volvo", 16);
-
-$Car1->increaseMileage(240);
+$tire1 = new Tire(1534, "Winter", "Bad");
+echo $tire1->size;
+echo "<br>";
+echo $tire1->type;
 echo "<br>";
 
-$Tire1 = new Tire (666, "Summer", "like new");
-echo $Tire1->size . "<br>";
-echo $Tire1->type . "<br>";
+$train1 = new Train("Vilcienins", 1, 85763543275464);
+$train1->increaseMileage(1);
+Train::makeNoise();
 
-$Car1 = new Car("BMW", "0.01");
 echo Car::$describe;
 Car::makeNoise();
-
-$Bird2->fly();
-$Bird3->fly();
 */
